@@ -72,3 +72,57 @@
                     <p class="has-text-weight-bold">+$0</p>
                 </div>
             </div>
+
+            <!--INICIO FILTROS-->
+
+            <div class="tile is-child box fit-content">
+                <div class="columns is-justify-content-space-between is-flex-wrap-wrap mb-0">
+                    <p class="title is-4 has-text-weight-bold mb-4">Filtros</p>
+                    <button id="btn-hide-filters" class="button is-size-7 is-link is-inverted">Ocultar filtros</button>
+                    <button id="btn-show-filters" class="button is-size-7 is-link is-inverted is-hidden">Mostrar
+                        filtros</button>
+                </div>
+
+                <div id="filters" class="column">
+                    <div class="field">
+                      <label for="filters-type" class="label">Tipo</label>
+                      <div class="select  is-fullwidth">
+                        <select id="filters-type">
+                          <option value="Todas">Todas</option>
+                          <option value="Gasto">Gasto</option>
+                          <option value="Ganancia">Ganancia</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="filters-categories" class="label">Categorías</label>
+                        <div class="select is-small is-fullwidth">
+                          <select id="filters-categories">
+                              <option value="Todas">Todas</option>
+                          </select>
+                        </div>
+                      </div>
+        
+                      <div class="field">
+                        <label for="filters-date" class="label">Desde</label>
+                        <input id="filters-date" type="date" class="input is-small">
+                      </div>
+
+                      <div class="field">
+                        <label for="filters-order" class="label">Ordenar por</label>
+                        <div class="select is-small is-fullwidth">
+                          <select id="filters-order">
+                            <option value="Mas reciente">Mas reciente</option>
+                            <option value="Menos reciente">Menos reciente</option>
+                            <option value="Mayor monto">Mayor monto</option>
+                            <option value="Menor monto">Menor monto</option>
+                            <option value="A/Z">A/Z</option>
+                            <option value="Z/A">Z/A</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--FIN BOX FILTROS-->
