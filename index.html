@@ -156,7 +156,7 @@
                         </p>
                     </div>
                 </div>
-                <div id="list-operations" class="columns has-text-weight-medium m-0">
+                <!-- <div id="list-operations" class="columns has-text-weight-medium m-0">
                     <div class="column is-3">Descripción</div>
                     <div class="column has-text-centered is-2">Categoría</div>
                     <div class="column has-text-centered is-3">Fecha</div>
@@ -168,6 +168,71 @@
         </div>
         </div>
         </div>
-        </section>
+        </section> -->
         <!-- FIN OPERACIONES -->
-        
+
+        <!--SECCIÓN NUEVA OPERACIÓN-->
+
+        <section id="new-operation" class="">
+            <div class="box column is-6 is-offset-3 is-10-mobile is-offset-1-mobile px-4 py-4">
+                <h2 class="title is-size-4 has-text-weight-bold">Nueva Operación</h2>
+                <div class="field mt-6">
+                    <label for="descripcion" class="label">Descripción</label>
+                    <div class="control">
+                        <input id="descripcion" class="input is-small" type="text" placeholder="Ingresa la descripción">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="monto" class="label">Monto</label>
+                    <div class="control">
+                        <input id="monto" class="input is-small" type="number" value="0" placeholder="Ingresa el monto">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="tipo" class="label">Tipo</label>
+                    <div class="control">
+                        <div class="select is-fullwidth">
+                            <select id="tipo">
+                                <option value="Gasto">Gasto</option>
+                                <option value="Ganancia">Ganancia</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field mt-6">
+                    <label for="categoria" class="label">Categorías</label>
+                    <div class="control">
+                        <div class="select is-small is-fullwidth">
+                            <select id="categoria">
+                                <option value="Todas">Todas</option>
+                                <option value="Comidas">Comidas</option>
+                                <option value="Servicios">Servicios</option>
+                                <option value="Salidas">Salidas</option>
+                                <option value="Educacion">Educacion</option>
+                                <option value="Transporte">Transporte</option>
+                                <option value="Trabajo">Trabajo</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="input-fecha" class="label">Fecha</label>
+                    <div class="control">
+                        <input id="input-fecha" class="input is-small" type="date">
+                    </div>
+                </div>
+                <div class="field is-grouped is-justify-content-flex-end pt-5">
+                    <p class="control">
+                        <button id="btn-cancel" class="button">Cancelar</button>
+                    </p>
+                    <p class="control">
+                        <button id="btn-add-operation" class="button is-link">Agregar</button>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- FIN SECCION EDITAR OPERACION -->
