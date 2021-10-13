@@ -1,59 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Edimar Morles">
-  <meta name="description" content="Con esta aplicacion puedes registrar tus gastos y ganancias.">
-  <meta name="keywords" content="balance, reporte, finanzas, gastos, ganancias, operaciones, dinero">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Edimar Morles">
+    <meta name="description" content="Con esta aplicacion puedes registrar tus gastos y ganancias.">
+    <meta name="keywords" content="balance, reporte, finanzas, gastos, ganancias, operaciones, dinero">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x.icon">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <title>AhorrADAs</title>
 </head>
 
 <body>
-  <header>
+    <header>
 
-    <!--INICIO BARRA NAVEGACION-->
+        <!--INICIO BARRA NAVEGACION-->
 
-    <nav class="navbar is-success is-spaced" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <div class="navbar-item is-size-2 ">
-          <i class="fas fa-coins"></i>
-          <h1 class="is-size-2">AhorrADAs</h1>
-        </div>
-        <a role="button" id="nav-bar-burger" class="navbar-burger is-align-self-center" aria-label="menu"
-          aria-expanded="false" data-target="main-nav-bar">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-      <div id="main-nav-bar" class="navbar-menu">
-        <div class="navbar-end is-size-5">
-          <a id="btn-balance" class="navbar-item">
-            <i class="far fa-clipboard mx-2 "></i>
-            Balance
-          </a>
-          <a id="btn-categories" class="navbar-item">
-            <i class="far fa-chart-bar mx-2"></i>
-            Categorías
-          </a>
-          <a id="btn-reports" class="navbar-item">
-            <i class="far fa-file-alt mx-2"></i>
-            Reportes
-          </a>
-        </div>
-      </div>
-      </div>
-    </nav>
-    <!-- FIN BARRA NAVEGACION -->
-  </header>
+        <nav class="navbar is-success is-spaced" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <div class="navbar-item is-size-2 ">
+                    <i class="fas fa-coins"></i>
+                    <h1 class="is-size-2">AhorrADAs</h1>
+                </div>
+                <a role="button" id="nav-bar-burger" class="navbar-burger is-align-self-center" aria-label="menu"
+                    aria-expanded="false" data-target="main-nav-bar">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="main-nav-bar" class="navbar-menu">
+                <div class="navbar-end is-size-5">
+                    <a id="btn-balance" class="navbar-item">
+                        <i class="far fa-clipboard mx-2 "></i>
+                        Balance
+                    </a>
+                    <a id="btn-categories" class="navbar-item">
+                        <i class="far fa-chart-bar mx-2"></i>
+                        Categorías
+                    </a>
+                    <a id="btn-reports" class="navbar-item">
+                        <i class="far fa-file-alt mx-2"></i>
+                        Reportes
+                    </a>
+                </div>
+            </div>
+            </div>
+        </nav>
+        <!-- FIN BARRA NAVEGACION -->
+    </header>
 
-  <main class="mt-6">
+    <main class="mt-6">
 
-    <!--********************************** INICIO SECCION BALANCE************************************-->
+        <!--INICIO BALANCE-->
 
-    <section id="balance-section" class="container px-6">
-      <div class="tile is-ancestor is-justify-content-center">
+        <div class="tile is-3 is-vertical is-parent fit-content">
+            <div class="tile is-child box">
+                <p class="title is-4 has-text-weight-bold mb-4">Balance</p>
+                <div class="columns is-mobile is-justify-content-space-between px-5 py-3">
+                    <p class="is-size-6">Ganancias</p>
+                    <p class="has-text-success has-text-weight-medium">+$0</p>
+                </div>
+                <div class="columns is-mobile is-justify-content-space-between px-5 py-3">
+                    <p class="is-size-6">Gastos</p>
+                    <p class="has-text-danger has-text-weight-medium">-$0</p>
+                </div>
+                <div class="columns is-mobile is-justify-content-space-between px-5">
+                    <p class="is-size-5">Total</p>
+                    <p class="has-text-weight-bold">+$0</p>
+                </div>
+            </div>
